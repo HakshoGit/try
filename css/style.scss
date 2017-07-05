@@ -1,0 +1,130 @@
+
+.active {
+	color: white !important;
+}
+#entete {
+	height: 100px;
+}
+nav {
+	opacity: 0.88;
+	background-color: black;
+	#inf {
+		background-color: black;
+		border-right: 2px solid lightgrey;
+		border-radius: 4px;
+		border-left: 60px solid lightgrey;
+		border-left: 2px solid lightgrey;
+		margin-left: 13px;
+		> span { color : white;}
+	}
+	#current {
+		color: #47a3da;
+		margin-left: 8px;
+	}
+	#menu {
+		border: solid 3px lightgrey;
+	}
+	#toto{
+		width: 82%;
+		padding: 0;
+		margin : 0 auto;
+		text-align: center;
+		font-size: 1.07em;
+		border-top : 1px solid lightgrey;
+		padding-top : 5px;
+		li  {
+			border-left : 1px dotted grey;
+			margin : 0 auto;
+			width: 150px;
+			:first-child a {margin-top : 4px;}
+			:hover {
+				font-size : 1.15em;
+				transition: 0.3s ease;
+				color: white;
+			}
+			.active {
+				font-size : 1.15em;
+				border-left: 5px solid #47a3da;
+				margin-left : -2px !important;
+				text-decoration: underline; 
+				margin: 0;
+				transition: 0.2s ease;
+
+			}
+			a { 
+				color : rgb(200, 200, 200); 
+			}
+
+		}
+	}
+	.collapsing, .in {
+		background-color: black;
+		padding-bottom: 5px;
+	}
+
+
+}
+
+section {
+	border : 3px solid grey;
+	width: 98%;
+	margin : 0 auto;
+	min-height: 700px;
+	margin-top: -4px;
+	h1 {
+		margin-top: 65px;
+	}
+	h2>img {height: 20px;}
+}
+
+#Menu1 > div{
+	width: 95%;
+	margin : 0 auto;
+}
+
+.timeline {
+	
+	.cbp_tmtime > span {
+		width: 33%;
+		display: inline !important;
+		margin-left: 20px;
+	}
+	:not(:first-child) { margin-top: -11px !important;}
+
+
+}
+
+
+
+
+@media only screen and (min-width : 768px) {
+
+#inf {
+	display: none;
+}
+.container-fluid { border-top: 2px solid #47a3da;  }
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:4px !important; 
+    padding-bottom:0 !important;
+    height: 35px;
+}
+.navbar {min-height:35px !important;}
+  
+#toto {
+	width: 100% ! important;
+	border: none !important;
+	margin : 0 !important;
+	li {
+		width: 16.66% !important;
+		max-width: 160px;
+		a {font-size : 1em !important;}
+	}
+	.active {
+		border-bottom: 4px solid #47a3da;
+		border-left: none !important; 
+		text-decoration: none ! important;
+		transition: 0.3s ease;
+	}
+}
+
+}
